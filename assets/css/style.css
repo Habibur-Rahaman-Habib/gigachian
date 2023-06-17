@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/**************************************
+Template Name: Gigachain
+Template URL: 
+Author: Habibur Rahaman
+Support: admin@gmail.com
+Description: Creative  HTML5 template.
+Version: 1.0
+Description:
+Tags: E-commerce
+Text-Domain: Gigachain
+
+***************************************/
+
+/**************************************
+			CSS Index 
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer 
+---------------------------------------
+**************************************/
+
+
+
+/********** Theme Default css ************/
+:root {
+	--sans: 'Plus Jakarta Sans', sans-serif;
+	--sky: #00D6EF;
+	--dark_blue: #283252;
+	--white: #ffffff;
+	--gray: #F8F8F8;
+	--light_white: rgba(239, 242, 244, 1);
+	--f_text: rgba(255, 255, 255, 0.8);
+	--p_text: rgba(73, 83, 91, 1);
+	--mail_bg: rgba(62, 70, 99, 1);
+	--placeholder: rgba(255, 255, 255, 0.3);
+	--violet: rgba(130, 0, 255, 1);
+	--header_src: rgba(231, 231, 231, 1);
+	--text: rgba(40, 50, 82, 1);
+	--common_t: rgba(4, 18, 38, 1);
+	--love: #FF007A;
+	--green: #00E15A;
+	--shadow: 0px 20px 30px rgba(154, 154, 154, 0.2);
+
+
+
+
+
+
+}
+
+body {
+	font-family: var(--sans);
+}
+
+ul {
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--lexend);
+	font-weight: bold;
+	color: var(--black);
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 42px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 19px;
+}
+
+h6 {
+	font-size: 17px;
+}
+
+p {
+	font-size: 15px;
+	color: var(--p_text);
+	font-weight: 300;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	padding: 0 0;
+	margin: 0 0;
+}
+
+img {}
+
+.container {
+	max-width: 1320px;
+}
+
+.common_title {
+	display: flex;
+	align-items: center;
+}
+
+.common_title h2 {
+	color: var(--dark_blue);
+}
+
+.common_title h2 span {
+	color: var(--sky);
+}
+
+.common_title i {
+	font-size: 23px;
+	color: var(--sky);
+	margin-left: 5px;
+}
+
+.common_btn, .common_btn1 {
+	color: var(--white);
+	font-size: 16px;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+}
+
+.common_btn a, .common_btn1 a {
+	color: var(--white);
+	font-size: 15px;
+}
+
+.common_btn1 {
+	background: var(--violet);
+}
+
+.common_btn {
+	background: var(--sky);
+}
+
+.common_heading {
+	text-align: center;
+}
+
+.common_heading h2 {
+	color: var(--common_t);
+	margin-bottom: 8px;
+}
+
+/**************  Header section ***********/
+header {}
+
+
+
+.main_menu {}
+
+.main_menu .wallet_page {}
+
+.main_menu .wallet_page .common_btn1 {
+	border-radius: 4px;
+}
+
+.main_menu .wallet_page .common_btn1 a {}
+
+.main_menu form {
+	position: relative;
+	margin-right: 16px;
+}
+
+.main_menu form .header_search {
+	background: var(--sky);
+	border: none;
+	outline: none;
+	width: 36px !important;
+	height: 36px !important;
+	color: var(--white);
+	font-weight: 100;
+	font-size: 13px;
+	line-height: 36px;
+	border-radius: 4px;
+	position: absolute;
+	right: 3px;
+	top: 3px;
+}
+
+.main_menu form input.form-control {
+	width: 230px;
+	height: 43px;
+	border: 1px solid rgb(233 226 226 / 30%);
+}
+
+.main_menu form input.form-control::placeholder {
+	color: var(--header_src);
+	font-size: 15px;
+	font-weight: lighter;
+
+}
+
+.main_menu ul {}
+
+.main_menu ul li {
+	margin-right: 50px;
+}
+
+.main_menu ul li a {
+	color: var(--text);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.main_menu ul li a span {
+	font-size: 13px;
+}
+
+.wallet_page button.common_btn1 {
+	position: relative;
+}
+
+.wallet_page button.common_btn1::before {
+	content: '';
+	position: absolute;
+	background: #8200FF;
+	filter: blur(9.5px);
+	border-radius: 4px;
+	left: 6px;
+	bottom: -3px;
+	width: 98%;
+	height: 10px;
+}
+
+/**************  hot auction section ***********/
+.hot_auct {
+	padding: 100px 0;
+	background: var(--gray);
+	position: relative;
+}
+
+.hot_auct::before {
+	content: "";
+	position: absolute;
+	width: 266px;
+	height: 266px;
+	left: 0px;
+	bottom: 0px;
+	background: rgba(130, 0, 255, 0.3);
+	filter: blur(250px);
+}
+
+.hot_auct::after {
+	content: "";
+	position: absolute;
+	width: 266px;
+	height: 266px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(0, 214, 239, 0.4);
+	filter: blur(250px);
+}
+
+.hot_item {
+	padding: 20px;
+	background: var(--white);
+}
+
+.hot_item_img {
+	position: relative;
+}
+
+.hot_item_img img {
+	width: 100%;
+}
+
+.hot_level {
+	position: absolute;
+	background: var(--white);
+	padding: 5px 10px;
+	border-radius: 4px;
+	left: 8px;
+	top: 8px;
+	font-size: 14px;
+}
+
+.hot_level i {
+	color: var(--love);
+}
+
+.hot_level span {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.hot_item_title {
+	padding: 18px 0;
+	border-bottom: 1px solid var(--header_src);
+}
+
+.hot_item_title h5 {
+	color: var(--dark_blue);
+	margin-bottom: 2px;
+}
+
+.hot_item_title span {
+	font-size: 12px;
+	color: var(--dark_blue);
+}
+
+.hot_item_meta {
+	display: flex;
+	padding-top: 18px;
+	justify-content: space-between;
+}
+
+.hot_item_meta span {
+	font-size: 14px;
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+.hot_item_meta h6 {
+	color: var(--dark_blue);
+}
+
+.hot_item_wrapper {
+	position: relative;
+}
+
+.hot_bid {
+	padding: 22px;
+	background: var(--white);
+	padding-top: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: fit-content;
+}
+
+.hot_item_wrapper:hover .hot_bid {
+	visibility: visible;
+	opacity: 1;
+	bottom: -54px;
+}
+
+.hot_bid a {
+	color: var(--white);
+	background: var(--violet);
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	padding: 6px 0;
+	border-radius: 4px;
+}
+
+
+/**************  footer section ***********/
+footer {
+	background: var(--dark_blue);
+	padding-top: 110px;
+	position: relative;
+}
+
+.f_vector1 {
+	position: absolute;
+	left: 0;
+	width: 287px;
+	bottom: 0;
+}
+
+.f_vector2 {
+	position: absolute;
+	right: 0;
+	width: 221px;
+}
+
+footer h5 {
+	color: var(--white);
+	margin-bottom: 35px;
+}
+
+.footer_top {
+	padding-bottom: 58px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_widget1 {
+	padding-right: 30px;
+}
+
+.footer_widget1 a {
+	display: inline-block;
+}
+
+.footer_widget1 p {
+	margin: 36px 0;
+	color: var(--f_text);
+	font-weight: 300;
+}
+
+.footer_widget1 form {
+	position: relative;
+}
+
+.footer_widget1 form .email {
+	height: 60px;
+	outline: none;
+	background: var(--mail_bg);
+	border: 0;
+}
+
+.footer_widget1 form .email::placeholder {
+	color: var(--placeholder);
+	padding-left: 16px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.footer_widget1 button.common_btn {
+	position: absolute;
+	right: 8px;
+	top: 7px;
+}
+
+.footer_common li {
+	margin-bottom: 13px;
+}
+
+.footer_common li a {
+	color: var(--f_text);
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.footer_widget4 ul li {
+	display: flex;
+	align-items: center;
+	gap: 17px;
+	margin-bottom: 25px;
+}
+
+.footer_widget4 ul li p {
+	color: var(--f_text);
+	font-weight: 300;
+}
+
+.footer_widget4 ul li a {
+	color: var(--f_text);
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.footer_bottom {
+	padding: 10px 0;
+}
+
+.f_bottom_right {
+	text-align: right;
+}
+
+.f_bottom_right ul li {
+	display: inline-block;
+	background: var(--light_white);
+	width: 33px;
+	height: 33px;
+	border-radius: 7px;
+	text-align: center;
+	line-height: 33px;
+	margin: 0 4px;
+	transition: .3s;
+}
+
+.f_bottom_right ul li:last-child() {
+	margin-right: 0;
+}
+
+.f_bottom_right ul li:hover {
+	background: var(--sky);
+}
+
+.f_bottom_left p {
+	color: var(--f_text);
+	font-size: 14px;
+	font-weight: 450;
+}
+
+.f_bottom_left p span {
+	color: var(--sky);
+}
+
+.f_bottom_right ul li a {
+	color: var(--p_text);
+	transition: .3s;
+}
+
+.f_bottom_right ul li:hover a {
+	color: var(--white);
+}
