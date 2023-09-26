@@ -1,9 +1,13 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- page title -->
   <title>Gigachain</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +15,12 @@
   <link rel="icon" href="assets/img/Fabicon.png">
 
   <!-- custom file link -->
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/fontawesome_all.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome_all.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/venobox.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
@@ -21,7 +28,7 @@
 <body>
 
   <!-- header start -->
-  <header>
+  <header class="header_sticky">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="assets/img/NEFTMX.png" alt=""></a>
@@ -31,21 +38,51 @@
         </button>
         <div class="collapse navbar-collapse main_menu" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="active" aria-current="page" href="index.html">Home <span><i
-                    class="fa-solid fa-angle-down"></i></span></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+                href="">Home <span><i class="fa-solid fa-angle-down"></i></span></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="home_page2.html">Home page 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Explore <span><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <li><a class="dropdown-item" href="explore_marketplace.html">Explore Marketplace</a>
+                </li>
+                <li><a class="dropdown-item" href="explore_collectibles.html">Explore Collectibles</a>
+                </li>
+                <li><a class="dropdown-item" href="collection_single_page.html">Collection Single
+                    Page</a></li>
+                <li><a class="dropdown-item" href="live_auction.html">Live Auction</a></li>
+                <li><a class="dropdown-item" href="single_item.html">Single Item Buy Now</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a href="#">Explore <span><i class="fa-solid fa-angle-down"></i></span></a>
+              <a class="nav-link" href="#">How It Works</a>
             </li>
             <li class="nav-item">
-              <a href="#">How It Works</a>
+              <a class="nav-link" href="#">Activity</a>
             </li>
-            <li class="nav-item">
-              <a href="#">Activity</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Page <span><i class="fa-solid fa-angle-down"></i></span></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Page <span><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="blog_grid.html">Blog Grid</a></li>
+                <li><a class="dropdown-item" href="blog_listing.html">Blog Listing</a></li>
+                <li><a class="dropdown-item" href="blog_single.html">Blog Single</a></li>
+                <li><a class="dropdown-item" href="authors_profile_1.html">Author Profile1</a></li>
+                <li><a class="dropdown-item" href="authors_profile_2.html">Author Profile2</a></li>
+                <li><a class="dropdown-item" href="get_in_touch.html">Get in Touch</a></li>
+                <li><a class="dropdown-item" href="create_new_item.html">Create New item</a></li>
+                <li><a class="dropdown-item" href="collect_wallet.html">Collect wallet</a></li>
+                <li><a class="dropdown-item" href="creator_page.html">Creator Page</a></li>
+              </ul>
             </li>
           </ul>
           <form class="d-flex">
@@ -53,14 +90,166 @@
             <button class="header_search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
           <div class="wallet_page">
-            <button class="common_btn1"><a href="">Collect Wallet</a></button>
+            <a class="common_btn1" href="collect_wallet.html">Collect Wallet</a>
           </div>
-
         </div>
       </div>
     </nav>
   </header>
   <!-- header end -->
+
+  <!-- banner start -->
+  <section class="banner">
+    <span class="position-absolute rounded-circle hero-circle-1"></span>
+    <span class="position-absolute rounded-circle hero-circle-2"></span>
+    <span class="position-absolute rounded-circle hero-circle-3"></span>
+    <div class="container-fluid">
+      <div class="row g-5">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
+          <div class="banner_left">
+            <h1 class="display-3">Create, <span>Explore</span>
+              <br>Buy & Collect Digital
+              Art 3D NFTs.
+            </h1>
+            <p>Dramatically intellectual capital rather than methods of empowerment. driven imperatives after quality
+              parad igmsrather
+              than.</p>
+            <div class="banner_button wallet_page banner_page">
+              <a class="common_btn1" href="#">Connect Wallet</a>
+              <a class="common_btn" href="#">How it Work</a>
+            </div>
+            <div class="banner_counter">
+              <div class="banner_counter_item">
+                <h2><span class="counter">520</span>K+</h2>
+                <h4>Artworks</h4>
+              </div>
+              <div class="banner_counter_item">
+                <h2><span class="counter">78</span>K+</h2>
+                <h4>Live Auctions</h4>
+              </div>
+              <div class="banner_counter_item banner_no_border">
+                <h2><span class="counter">2.6</span>K+</h2>
+                <h4>Total Artists</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
+          <div class="banner_slider_wrap">
+            <div class="banner_single_slide">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/banner!.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>The RenaiXance Rising </h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <span>Current Bid</span>
+                  <h6>0.048 ETH</h6>
+                </div>
+                <div class="hot_meta_right">
+                  <span>Auction Ends in</span>
+                  <h6>24H : 32M : 40S</h6>
+                </div>
+              </div>
+            </div>
+            <div class="banner_single_slide">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/banner2.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Hamlet Contemplates Yorick</h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <span>Current Bid</span>
+                  <h6>0.048 ETH</h6>
+                </div>
+                <div class="hot_meta_right">
+                  <span>Auction Ends in</span>
+                  <h6>24H : 32M : 40S</h6>
+                </div>
+              </div>
+            </div>
+            <div class="banner_single_slide">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/banner2.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Hamlet Contemplates Yorick</h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <span>Current Bid</span>
+                  <h6>0.048 ETH</h6>
+                </div>
+                <div class="hot_meta_right">
+                  <span>Auction Ends in</span>
+                  <h6>24H : 32M : 40S</h6>
+                </div>
+              </div>
+            </div>
+            <div class="banner_single_slide">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/banner2.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Hamlet Contemplates Yorick</h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <span>Current Bid</span>
+                  <h6>0.048 ETH</h6>
+                </div>
+                <div class="hot_meta_right">
+                  <span>Auction Ends in</span>
+                  <h6>24H : 32M : 40S</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner end -->
 
   <!-- hot auctions start -->
   <section class="hot_auct">
@@ -79,14 +268,18 @@
           <div class="hot_item_wrapper">
             <div class="hot_item">
               <div class="hot_item_img">
-                <img src="assets/img/h1.png" alt="">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/h1.png" alt=""></a>
+                </div>
                 <div class="hot_level">
                   <i class="fa-solid fa-heart"></i>
                   <span>1.5 Likes</span>
                 </div>
               </div>
               <div class="hot_item_title">
-                <h5>The RenaiXance Rising </h5>
+                <a href="single_item.html">
+                  <h5>The RenaiXance Rising </h5>
+                </a>
                 <span><b>Relesed:</b> 19 Dec 2022</span>
               </div>
               <div class="hot_item_meta">
@@ -101,7 +294,7 @@
               </div>
             </div>
             <div class="hot_bid">
-              <a href="#">Place Bid</a>
+              <a href="collection_single_page.html">Place Bid</a>
             </div>
           </div>
         </div>
@@ -109,14 +302,18 @@
           <div class="hot_item_wrapper">
             <div class="hot_item">
               <div class="hot_item_img">
-                <img src="assets/img/h2.png" alt="">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/h2.png" alt=""></a>
+                </div>
                 <div class="hot_level">
                   <i class="fa-solid fa-heart"></i>
                   <span>1.5 Likes</span>
                 </div>
               </div>
               <div class="hot_item_title">
-                <h5>Aesthetic Art Collage </h5>
+                <a href="single_item.html">
+                  <h5>Aesthetic Art Collage </h5>
+                </a>
                 <span><b>Relesed:</b> 19 Dec 2022</span>
               </div>
               <div class="hot_item_meta">
@@ -131,7 +328,8 @@
               </div>
             </div>
             <div class="hot_bid">
-              <a href="#">Place Bid</a>
+              <a href="collection_single_page.html">Place Bid</a>
+
             </div>
           </div>
         </div>
@@ -139,14 +337,18 @@
           <div class="hot_item_wrapper">
             <div class="hot_item">
               <div class="hot_item_img">
-                <img src="assets/img/h3.png" alt="">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/h3.png" alt=""></a>
+                </div>
                 <div class="hot_level">
                   <i class="fa-solid fa-heart"></i>
                   <span>1.5 Likes</span>
                 </div>
               </div>
               <div class="hot_item_title">
-                <h5>Lazy Ape Yacht Club </h5>
+                <a href="single_item.html">
+                  <h5>Lazy Ape Yacht Club </h5>
+                </a>
                 <span><b>Relesed:</b> 19 Dec 2022</span>
               </div>
               <div class="hot_item_meta">
@@ -161,7 +363,8 @@
               </div>
             </div>
             <div class="hot_bid">
-              <a href="#">Place Bid</a>
+              <a href="collection_single_page.html">Place Bid</a>
+
             </div>
           </div>
         </div>
@@ -169,14 +372,18 @@
           <div class="hot_item_wrapper">
             <div class="hot_item">
               <div class="hot_item_img">
-                <img src="assets/img/h4.png" alt="">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/h4.png" alt=""></a>
+                </div>
                 <div class="hot_level">
                   <i class="fa-solid fa-heart"></i>
                   <span>1.5 Likes</span>
                 </div>
               </div>
               <div class="hot_item_title">
-                <h5>Letters to My Future #67</h5>
+                <a href="single_item.html">
+                  <h5>Letters to My Future #67</h5>
+                </a>
                 <span><b>Relesed:</b> 19 Dec 2022</span>
               </div>
               <div class="hot_item_meta">
@@ -191,14 +398,1403 @@
               </div>
             </div>
             <div class="hot_bid">
-              <a href="#">Place Bid</a>
+              <a href="collection_single_page.html">Place Bid</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 text-center mt-5">
+          <a class="common_btn" href="live_auction.html">View All <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hot auctions end -->
+
+  <!-- Top Collection start -->
+  <section class="top_clt">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-9 com-sm-12 col-12 mb-2">
+          <div class="common_title">
+            <h2>Top Collection Over</h2>
+            <div class="section-dropdown d-inline-block dropdown">
+              <button data-bs-toggle="dropdown" class="bg-transparent border-0" aria-expanded="false">
+                <span class="h1 d-inline-block">last 7 days</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>last 14 days</li>
+                <li>last 30 days</li>
+                <li>last 60 days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12">
+          <div class="top_clt_btn text-end">
+            <a class="common_btn1" href="explore_marketplace.html">View All <img src="assets/img/arrow.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="row collection_item">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-2">
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c1.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>Boared Ape Yacht</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p>+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c4.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>Moonbirds</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p class="clt_price">+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c7.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>Takashi Murakami</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p>+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c10.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>Art Blocks Factory</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p>+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c2.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>CryptoNinja Partners</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p>+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c5.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>Mutant Ape Yacht</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p class="clt_price">+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c8.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>Crypto Cowboy</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p>+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c11.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>VeeFriends Series</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p>+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-2 collection_break">
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c3.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>CryptoPunks</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p>+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c6.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>Solana Monkey Business</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p>+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c9.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <a href="collection_single_page.html">
+                  <h6>Otherdeed</h6>
+                </a>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p>+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
+            </div>
+          </div>
+          <div class="collection_single_item">
+            <div class="row">
+              <div class="col-xl-2 col-12">
+                <div class="clt_img">
+                  <img src="assets/img/c12.png" alt="">
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-8 ">
+                <h6>Elemental by Fang Lijun</h6>
+                <span>Floor Price & 108</span>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-4">
+                <p class="clt_price">+14.28%</p>
+                <span><img src="assets/img/i.png" alt="">5,332.59</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- hot auctions end -->
+  <!-- Top Collection end -->
+
+  <!-- Most Popular start -->
+  <section class="popular">
+    <span class="pp-circle-shape position-absolute rounded-circle z--1"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="common_heading">
+            <h2>Most Popular Collection</h2>
+            <p>Rapidiously repurpose partnerships without Compellingly myocardinate installed <br> base through an
+              expanded
+              array of web services.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular_slider_wrapper">
+        <div class="popular_slider">
+          <div class="popular_item">
+            <div class="p_item_top">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p1.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p2.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p3.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p4.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p_item_bottom">
+              <img src="assets/img/fg.png" alt="">
+              <div class="p_bottom_meta">
+                <a href="single_item.html">
+                  <h5>The Flower Girls</h5>
+                </a>
+                <span>248 Items</span>
+              </div>
+            </div>
+          </div>
+          <div class="popular_item">
+            <div class="p_item_top">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p6.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p8.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p9.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p_item_bottom">
+              <img src="assets/img/fg.png" alt="">
+              <div class="p_bottom_meta">
+                <a href="single_item.html">
+                  <h5>The Flower Girls</h5>
+                </a>
+                <span>248 Items</span>
+              </div>
+            </div>
+          </div>
+          <div class="popular_item">
+            <div class="p_item_top">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p14.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p15.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p16.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p10.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p_item_bottom">
+              <img src="assets/img/fg.png" alt="">
+              <div class="p_bottom_meta">
+                <a href="single_item.html">
+                  <h5>The Flower Girls</h5>
+                </a>
+                <span>248 Items</span>
+              </div>
+            </div>
+          </div>
+          <div class="popular_item">
+            <div class="p_item_top">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p11.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p12.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p18.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p13.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p_item_bottom">
+              <img src="assets/img/fg.png" alt="">
+              <div class="p_bottom_meta">
+                <a href="single_item.html">
+                  <h5>The Flower Girls</h5>
+                </a>
+                <span>248 Items</span>
+              </div>
+            </div>
+          </div>
+          <div class="popular_item">
+            <div class="p_item_top">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p1.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p2.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p_bottom_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p3.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="p_top_img">
+                    <div class="img_wrap">
+                      <a href="single_item.html"><img class="img" src="assets/img/p4.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p_item_bottom">
+              <img src="assets/img/fg.png" alt="">
+              <div class="p_bottom_meta">
+                <a href="single_item.html">
+                  <h5>The Flower Girls</h5>
+                </a>
+                <span>248 Items</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Most Popular end -->
+
+  <!-- discover product start -->
+  <section class="discover_product common_bg1">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7 col-md-8 col-sm-8 col-12">
+          <div class="common_heading">
+            <h2>Discover Product <span><img src="assets/img/fire.png" alt=""></span></h2>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-4 col-sm-4 col-12 ">
+          <div class="discover_right text-end">
+            <select class="form-select ds-select">
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Price: Low to Mid</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="discover_button mt-4 mb-5">
+        <button class="common_btn2" data-filter=".trending"><svg width="14" height="17" viewBox="0 0 14 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.66667 1.25305L1 10.2531H7L6.33333 16.2531L13 7.25305H7L7.66667 1.25305Z" stroke="#49535B"
+              stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg> Trendings</button>
+        <button class="common_btn2" data-filter=".art"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.47653 12.1598L5.21106 15.0107C7.13156 17.0129 7.78753 16.9799 9.68432 15.0107L14.0864 10.4213C15.6197 8.8228 16.0069 7.7599 14.0864 5.7577L11.3519 2.90682C9.30496 0.772785 8.41189 1.30835 6.87865 2.90682L2.47653 7.49623C0.587649 9.47372 0.429583 10.0258 2.47653 12.1598Z"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path opacity="0.6"
+              d="M14.6711 13.1733L14.1495 14.0714C13.4145 15.3485 13.9836 16.3949 15.414 16.3949C16.8445 16.3949 17.4136 15.3485 16.6786 14.0714L16.157 13.1733C15.746 12.4647 15.0742 12.4647 14.6711 13.1733Z"
+              stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path opacity="0.6" d="M1.07764 9.42424C5.47186 8.18007 10.1032 8.13888 14.5132 9.31713L14.9084 9.42424"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>Art</button>
+        <button class="common_btn2" data-filter=".music"><svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.52783 7.57229L13.6865 5.07446" stroke="#49535B" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <mask id="path-2-inside-1_155_663" fill="white">
+              <path
+                d="M14.6191 11.5395V2.28244C14.6191 0.309623 13.0925 0.0364639 11.5471 0.377913L5.70298 1.66783C4.6353 1.90305 3.90479 2.58595 3.90479 3.57236V5.2189V6.32672V13.1102" />
+            </mask>
+            <path
+              d="M13.6191 11.5395C13.6191 12.0918 14.0668 12.5395 14.6191 12.5395C15.1713 12.5395 15.6191 12.0918 15.6191 11.5395H13.6191ZM11.5471 0.377913L11.7627 1.35441L11.7629 1.35436L11.5471 0.377913ZM5.70298 1.66783L5.91813 2.64441L5.91852 2.64433L5.70298 1.66783ZM2.90479 13.1102C2.90479 13.6625 3.3525 14.1102 3.90479 14.1102C4.45707 14.1102 4.90479 13.6625 4.90479 13.1102H2.90479ZM15.6191 11.5395V2.28244H13.6191V11.5395H15.6191ZM15.6191 2.28244C15.6191 1.6629 15.4992 1.09703 15.2282 0.614727C14.9519 0.122895 14.5507 -0.223542 14.0906 -0.441453C13.2167 -0.855313 12.1824 -0.786579 11.3314 -0.598535L11.7629 1.35436C12.4572 1.20096 12.9589 1.23555 13.2346 1.36611C13.3493 1.42041 13.4264 1.49082 13.4846 1.59439C13.5481 1.70749 13.6191 1.91557 13.6191 2.28244H15.6191ZM11.3316 -0.598584L5.48745 0.691336L5.91852 2.64433L11.7627 1.35441L11.3316 -0.598584ZM5.48783 0.691251C4.13322 0.989685 2.90479 1.96099 2.90479 3.57236H4.90479C4.90479 3.21091 5.13738 2.81642 5.91813 2.64441L5.48783 0.691251ZM2.90479 3.57236V5.2189H4.90479V3.57236H2.90479ZM2.90479 5.2189V6.32672H4.90479V5.2189H2.90479ZM2.90479 6.32672V13.1102H4.90479V6.32672H2.90479Z"
+              fill="#49535B" mask="url(#path-2-inside-1_155_663)" />
+            <path
+              d="M4.39566 12.7553C4.39566 13.8034 3.54597 14.6531 2.49783 14.6531C1.44969 14.6531 0.6 13.8034 0.6 12.7553C0.6 11.7071 1.44969 10.8574 2.49783 10.8574C3.54597 10.8574 4.39566 11.7071 4.39566 12.7553Z"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M14.1387 12.3937C14.1387 13.4971 13.2443 14.3915 12.1409 14.3915C11.0375 14.3915 10.1431 13.4971 10.1431 12.3937C10.1431 11.2903 11.0375 10.3959 12.1409 10.3959C13.2443 10.3959 14.1387 11.2903 14.1387 12.3937Z"
+              stroke="#49535B" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>Music</button>
+        <button class="common_btn2" data-filter=".video"><svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.1157 14.6531H4.42767C3.14721 14.6531 2.38232 14.2386 1.92558 13.6963C1.45338 13.1357 1.23867 12.3528 1.23867 11.5031V4.00305C1.23867 2.62961 1.47691 1.90657 1.88874 1.49898C2.30238 1.0896 3.03738 0.853052 4.42767 0.853052H10.1157C11.506 0.853052 12.241 1.0896 12.6546 1.49898C13.0664 1.90657 13.3047 2.62961 13.3047 4.00305V11.5031C13.3047 12.8753 13.0646 13.5988 12.6516 14.0067C12.2366 14.4167 11.5009 14.6531 10.1157 14.6531Z"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M15.7499 11.804L15.7485 11.803L13.5043 10.2451V5.25227L15.7475 3.69499C15.7476 3.6949 15.7478 3.6948 15.7479 3.6947C16.2708 3.33338 16.5817 3.37417 16.7058 3.4383C16.8273 3.50107 17.0383 3.72604 17.0383 4.35941V11.1468C17.0383 11.7807 16.827 12.0045 16.707 12.0662C16.5845 12.1292 16.2738 12.17 15.7499 11.804Z"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M9.18887 6.86239C9.93445 6.86239 10.5389 6.2642 10.5389 5.52629C10.5389 4.78838 9.93445 4.19019 9.18887 4.19019C8.44328 4.19019 7.83887 4.78838 7.83887 5.52629C7.83887 6.2642 8.44328 6.86239 9.18887 6.86239Z"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg> Video</button>
+        <button class="common_btn2" data-filter=".sports"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.6" d="M12.1738 3.50317C10.3863 6.20175 6.94195 7.74972 3.3532 7.47096L1.17383 7.29897"
+              stroke="#49535B" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path opacity="0.6" d="M5.17383 15.5032C6.79883 12.13 9.93008 10.195 13.1926 10.5434L15.1738 10.7584"
+              stroke="#49535B" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M8.13818 16.2531C12.2803 16.2531 15.6382 12.8952 15.6382 8.75305C15.6382 4.61092 12.2803 1.25305 8.13818 1.25305C3.99605 1.25305 0.638184 4.61092 0.638184 8.75305C0.638184 12.8952 3.99605 16.2531 8.13818 16.2531Z"
+              stroke="#49535B" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          Sports</button>
+        <button class="common_btn2" data-filter=".game"><svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.628 9.64685C19.5806 8.48663 19.3913 7.2003 19.1073 5.98963C18.8234 4.82941 18.4684 3.74486 18.0424 2.91253C16.3858 -0.189803 14.5873 0.289418 12.4337 0.894751C11.7474 1.07131 11.0138 1.27308 10.2565 1.34875H10.0199C9.26257 1.27308 8.52894 1.07131 7.84265 0.894751C5.68911 0.314641 3.89054 -0.189803 2.23397 2.93775C1.808 3.77008 1.42935 4.85463 1.16903 6.01486C0.885049 7.22552 0.695727 8.51185 0.648396 9.67207C0.601065 10.9584 0.719392 11.8916 0.97971 12.5474C1.24003 13.1527 1.61867 13.5311 2.11564 13.6824C2.56529 13.8085 3.08592 13.7581 3.63022 13.5058C4.55317 13.1023 5.61811 12.2447 6.65938 11.2106C7.39301 10.454 8.7656 10.0756 10.1382 10.0756C11.5108 10.0756 12.8834 10.454 13.617 11.2106C14.6583 12.2447 15.7232 13.1023 16.6461 13.5058C17.1904 13.7328 17.7111 13.8085 18.1607 13.6824C18.634 13.5311 19.0363 13.178 19.2967 12.5222C19.557 11.8916 19.6753 10.9584 19.628 9.64685ZM18.492 12.1691C18.35 12.5222 18.1607 12.724 17.9241 12.7996C17.6638 12.8753 17.3324 12.8248 16.9538 12.6735C16.1255 12.3204 15.1552 11.5385 14.2086 10.5801C13.3093 9.62163 11.7238 9.14241 10.1382 9.14241C8.55261 9.14241 6.96703 9.62163 6.04409 10.5296C5.07381 11.4881 4.10353 12.2952 3.29891 12.6231C2.92027 12.7744 2.58895 12.8501 2.32863 12.7492C2.09198 12.6735 1.90266 12.4717 1.76067 12.1186C1.57134 11.6394 1.47668 10.8575 1.52401 9.6973C1.57134 8.61274 1.737 7.37685 2.02098 6.21663C2.2813 5.13208 2.61262 4.12319 3.01493 3.36653C4.31652 0.869529 5.8311 1.27308 7.62966 1.77753C8.36329 1.97931 9.12058 2.18108 9.94886 2.25675C9.97253 2.25675 9.97253 2.25675 9.99619 2.25675H10.2565C10.2802 2.25675 10.2802 2.25675 10.3038 2.25675C11.1558 2.18108 11.9131 1.97931 12.6467 1.77753C14.4453 1.29831 15.9598 0.869529 17.2614 3.36653C17.6638 4.12319 17.9951 5.10686 18.2554 6.21663C18.5157 7.37685 18.705 8.58752 18.7524 9.6973C18.7997 10.8575 18.705 11.6394 18.492 12.1691Z"
+              fill="#49535B" />
+            <path
+              d="M7.96099 4.72844C7.72434 4.50144 7.44035 4.32489 7.10904 4.29967C7.08537 3.97178 6.94338 3.64389 6.73039 3.41689L6.70673 3.39167C6.44641 3.11422 6.1151 2.96289 5.73645 2.96289C5.35781 2.96289 5.00283 3.13945 4.76617 3.39167C4.55319 3.61867 4.38753 3.94656 4.36386 4.29967C4.03255 4.32489 3.74857 4.47622 3.51191 4.70322L3.48825 4.72844C3.22793 5.00589 3.08594 5.359 3.08594 5.76255C3.08594 6.16611 3.25159 6.54444 3.48825 6.79667C3.7249 7.04889 4.00888 7.20022 4.36386 7.22544C4.38753 7.57855 4.52952 7.90644 4.76617 8.13344C5.02649 8.41089 5.35781 8.56222 5.73645 8.56222C6.1151 8.56222 6.47008 8.38566 6.70673 8.13344C6.91972 7.88122 7.08537 7.57855 7.10904 7.22544C7.44035 7.20022 7.748 7.04889 7.96099 6.79667C8.22131 6.51922 8.3633 6.16611 8.3633 5.76255C8.3633 5.359 8.19764 4.98067 7.96099 4.72844ZM7.36936 6.14089C7.2747 6.24178 7.15637 6.29222 7.01438 6.29222H6.68306C6.44641 6.29222 6.23342 6.494 6.23342 6.77144V7.09933C6.23342 7.25066 6.18609 7.37678 6.09143 7.47766C5.99677 7.57855 5.87844 7.629 5.73645 7.629C5.59446 7.629 5.47613 7.57855 5.38147 7.47766C5.28681 7.37678 5.23948 7.25066 5.23948 7.09933V6.74622C5.23948 6.494 5.05016 6.267 4.78984 6.267H4.45853C4.31653 6.267 4.19821 6.21655 4.10355 6.11567C4.03255 6.04 3.96155 5.91389 3.96155 5.76255C3.96155 5.61122 4.00888 5.48511 4.10355 5.38422C4.10355 5.38422 4.10355 5.38422 4.12721 5.359C4.22187 5.28333 4.3402 5.23289 4.45853 5.23289H4.78984C5.02649 5.23289 5.23948 5.03111 5.23948 4.75367V4.40056C5.23948 4.24922 5.28681 4.12311 5.38147 4.02222C5.47613 3.92133 5.59446 3.87089 5.73645 3.87089C5.87844 3.87089 5.99677 3.92133 6.09143 4.02222C6.09143 4.02222 6.09143 4.02222 6.1151 4.04745C6.18609 4.14833 6.23342 4.27444 6.23342 4.40056V4.75367C6.23342 5.00589 6.42275 5.23289 6.68306 5.23289H7.01438C7.15637 5.23289 7.2747 5.28333 7.36936 5.38422C7.46402 5.48511 7.51135 5.61122 7.51135 5.76255C7.51135 5.91389 7.46402 6.04 7.36936 6.14089Z"
+              fill="#49535B" />
+            <path
+              d="M14.256 4.85466C14.7135 4.85466 15.0843 4.45943 15.0843 3.97189C15.0843 3.48434 14.7135 3.08911 14.256 3.08911C13.7986 3.08911 13.4277 3.48434 13.4277 3.97189C13.4277 4.45943 13.7986 4.85466 14.256 4.85466Z"
+              fill="#49535B" />
+            <path
+              d="M14.256 8.43609C14.7135 8.43609 15.0843 8.04085 15.0843 7.55331C15.0843 7.06576 14.7135 6.67053 14.256 6.67053C13.7986 6.67053 13.4277 7.06576 13.4277 7.55331C13.4277 8.04085 13.7986 8.43609 14.256 8.43609Z"
+              fill="#49535B" />
+            <path
+              d="M12.5754 6.64543C13.0328 6.64543 13.4036 6.2502 13.4036 5.76266C13.4036 5.27511 13.0328 4.87988 12.5754 4.87988C12.1179 4.87988 11.7471 5.27511 11.7471 5.76266C11.7471 6.2502 12.1179 6.64543 12.5754 6.64543Z"
+              fill="#49535B" />
+            <path
+              d="M15.9362 6.64543C16.3936 6.64543 16.7645 6.2502 16.7645 5.76266C16.7645 5.27511 16.3936 4.87988 15.9362 4.87988C15.4787 4.87988 15.1079 5.27511 15.1079 5.76266C15.1079 6.2502 15.4787 6.64543 15.9362 6.64543Z"
+              fill="#49535B" />
+          </svg> Game</button>
+        <button class="common_btn2" data-filter=".utility"><svg width="12" height="17" viewBox="0 0 12 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.6"
+              d="M9.05119 7.24158C9.05119 7.24158 8.901 7.99254 6.64812 10.9964C4.47034 13.85 7.62437 15.9527 7.99985 16.2531H8.07495C8.52552 15.8776 14.2328 12.273 9.05119 7.24158Z"
+              stroke="#49535B" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M7.24869 5.58942C7.24869 3.86221 6.57282 2.2852 5.89696 1.38404C5.67167 1.15876 5.29619 1.23385 5.2211 1.53424C4.92071 2.66068 4.01956 5.06375 1.84178 7.9174C-0.936777 11.522 1.61649 15.427 4.24485 16.178C5.67167 16.5534 3.86937 15.427 3.64408 13.099C3.41879 10.1703 7.24869 7.99249 7.24869 5.58942Z"
+              stroke="#49535B" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg> Utility</button>
+        <button class="common_btn2" data-filter=".photography"><svg width="16" height="16" viewBox="0 0 16 16"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.6071 6.20579L14.607 6.20692L14.2074 12.4018C14.1633 13.0831 13.9591 13.634 13.5977 14.0109C13.2462 14.3775 12.6754 14.6531 11.7394 14.6531H3.68444C2.74816 14.6531 2.1753 14.3773 1.82283 14.0105C1.461 13.6339 1.25719 13.0838 1.21666 12.4048L1.21648 12.4019L0.816804 6.20692L0.816728 6.20579C0.733234 4.94876 1.76248 3.85305 3.1003 3.85305C3.79172 3.85305 4.42558 3.46749 4.74462 2.8671L4.7447 2.86714L4.74952 2.85767L5.30181 1.77234C5.41639 1.55221 5.64534 1.31609 5.94806 1.13308C6.25092 0.949987 6.57316 0.853052 6.83571 0.853052H8.59581C8.85357 0.853052 9.17365 0.94938 9.47614 1.13272C9.77829 1.31585 10.0074 1.5521 10.122 1.77234L10.6743 2.85767L10.6742 2.85771L10.6792 2.8671C10.9982 3.46749 11.6321 3.85305 12.3235 3.85305C13.6613 3.85305 14.6906 4.94876 14.6071 6.20579Z"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6.55908 4.75305H8.86489" stroke="#49535B" stroke-width="1.2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M7.71182 12.2531C9.08762 12.2531 10.2098 11.1581 10.2098 9.81555C10.2098 8.47305 9.08762 7.37805 7.71182 7.37805C6.33603 7.37805 5.21387 8.47305 5.21387 9.81555C5.21387 11.1581 6.33603 12.2531 7.71182 12.2531Z"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg> Photography</button>
+        <button class="common_btn2" data-filter="*"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.9772 7.09602L15.2417 10.1759C14.6113 12.8358 13.3655 13.9115 11.0239 13.6905C10.6486 13.661 10.2433 13.5947 9.80805 13.4915L8.54719 13.1968C5.41756 12.4674 4.4494 10.9495 5.1849 7.86968L5.9204 4.78244C6.07051 4.15615 6.25063 3.61091 6.47578 3.16146C7.35388 1.37838 8.84739 0.899452 11.3541 1.48153L12.6075 1.76889C15.7521 2.49096 16.7127 4.01616 15.9772 7.09602Z"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M11.0241 13.6904C10.5588 13.9999 9.97338 14.2577 9.2604 14.4861L8.07459 14.8693C5.09507 15.8124 3.5265 15.024 2.55834 12.0989L1.59769 9.18848C0.637033 6.26335 1.43257 4.71605 4.4121 3.77293L5.59791 3.38979C5.90562 3.294 6.19832 3.21295 6.476 3.16138C6.25085 3.61083 6.07073 4.15607 5.92063 4.78236L5.18513 7.86959C4.44963 10.9495 5.41778 12.4673 8.54741 13.1967L9.80827 13.4915C10.2436 13.5946 10.6488 13.6609 11.0241 13.6904Z"
+              stroke="#49535B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path opacity="0.6" d="M9.20801 5.6886L12.848 6.59488" stroke="#49535B" stroke-width="1.2"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path opacity="0.6" d="M8.47266 8.54016L10.6491 9.0854" stroke="#49535B" stroke-width="1.2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          See more</button>
+      </div>
+
+      <div class="row discover_product_hover" data-ref="containers">
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4  art " data-ref="target">
+          <div class="explore_market_items">
+            <div class="hot_item">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/em1.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Fishtails Digital 3D </h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <img src="assets/img/em_icon.png" alt="">
+                  <div>
+                    <span>Current Bid</span>
+                    <h6>4.25 ETH</h6>
+                  </div>
+                </div>
+                <div class="hot_meta_right">
+                  <a class="common_btn2" href="#">Place Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4  trending " data-ref="target">
+          <div class="explore_market_items">
+            <div class="hot_item">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/em2.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Deep Sea phantasy</h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <img src="assets/img/em_icon.png" alt="">
+                  <div>
+                    <span>Current Bid</span>
+                    <h6>4.25 ETH</h6>
+                  </div>
+                </div>
+                <div class="hot_meta_right">
+                  <a class="common_btn2" href="#">Place Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4  music art " data-ref="target">
+          <div class="explore_market_items">
+            <div class="hot_item">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/em3.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Running Puppets </h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <img src="assets/img/em_icon.png" alt="">
+                  <div>
+                    <span>Current Bid</span>
+                    <h6>4.25 ETH</h6>
+                  </div>
+                </div>
+                <div class="hot_meta_right">
+                  <a class="common_btn2" href="#">Place Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4  video sports game " data-ref="target">
+          <div class="explore_market_items">
+            <div class="hot_item">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/em4.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Abstract Figure</h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <img src="assets/img/em_icon.png" alt="">
+                  <div>
+                    <span>Current Bid</span>
+                    <h6>4.25 ETH</h6>
+                  </div>
+                </div>
+                <div class="hot_meta_right">
+                  <a class="common_btn2" href="#">Place Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4  sports game utility " data-ref="target">
+          <div class="explore_market_items">
+            <div class="hot_item">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/em5.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Cute Astronout</h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <img src="assets/img/em_icon.png" alt="">
+                  <div>
+                    <span>Current Bid</span>
+                    <h6>4.25 ETH</h6>
+                  </div>
+                </div>
+                <div class="hot_meta_right">
+                  <a class="common_btn2" href="#">Place Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4  game utility photography"
+          data-ref="target">
+          <div class="explore_market_items">
+            <div class="hot_item">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/em6.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Geometrical Figure</h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <img src="assets/img/em_icon.png" alt="">
+                  <div>
+                    <span>Current Bid</span>
+                    <h6>4.25 ETH</h6>
+                  </div>
+                </div>
+                <div class="hot_meta_right">
+                  <a class="common_btn2" href="#">Place Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 utility photography trending "
+          data-ref="target">
+          <div class="explore_market_items">
+            <div class="hot_item">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/em7.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Cute Astronout</h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <img src="assets/img/em_icon.png" alt="">
+                  <div>
+                    <span>Current Bid</span>
+                    <h6>4.25 ETH</h6>
+                  </div>
+                </div>
+                <div class="hot_meta_right">
+                  <a class="common_btn2" href="#">Place Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4 photography trending art "
+          data-ref="target">
+          <div class="explore_market_items">
+            <div class="hot_item">
+              <div class="hot_item_img">
+                <div class="img_wrap">
+                  <a href="single_item.html"><img class="img" src="assets/img/em8.png" alt=""></a>
+                </div>
+                <div class="hot_level">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>1.5 Likes</span>
+                </div>
+              </div>
+              <div class="hot_item_title">
+                <a href="single_item.html">
+                  <h5>Sound of Silence</h5>
+                </a>
+                <span><b>Relesed:</b> 19 Dec 2022</span>
+              </div>
+              <div class="hot_item_meta">
+                <div class="hot_meta_left">
+                  <img src="assets/img/em_icon.png" alt="">
+                  <div>
+                    <span>Current Bid</span>
+                    <h6>4.25 ETH</h6>
+                  </div>
+                </div>
+                <div class="hot_meta_right">
+                  <a class="common_btn2" href="#">Place Bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- discover product end -->
+
+  <!-- Top Creator start -->
+  <section class="top_creator common_bg1">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="common_title">
+            <h2>Top Creator Over</h2>
+            <div class="section-dropdown d-inline-block dropdown">
+              <button data-bs-toggle="dropdown" class="bg-transparent border-0" aria-expanded="false">
+                <span class="h1 d-inline-block">last 7 days</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>last 14 days</li>
+                <li>last 30 days</li>
+                <li>last 60 days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row top_creator_item_wrap">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+          <div class="top_creator_item">
+            <div class="tor_creator_item_heading">
+              <h3>Top Sellers</h3>
+              <a href="creator_page.html" class="common_btn2">View More</a>
+            </div>
+            <div class="creator_item_list">
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>1</span>
+                    <img src="assets/img/cr1.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>SkuxxVerse Pass</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>2</span>
+                    <img src="assets/img/cr2.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>The Other Side</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>3</span>
+                    <img src="assets/img/cr2.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>The Other Side</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>4</span>
+                    <img src="assets/img/cr3.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Oasis Doodles</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item mb-0">
+                  <div class="creator_img">
+                    <span>5</span>
+                    <img src="assets/img/cr4.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>SoulZ Monogatari</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+          <div class="top_creator_item">
+            <div class="tor_creator_item_heading">
+              <h3>Top Sellers</h3>
+              <a href="creator_page.html" class="common_btn2">View More</a>
+            </div>
+            <div class="creator_item_list">
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>1</span>
+                    <img src="assets/img/cr5.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Pizza Game Chef</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>2</span>
+                    <img src="assets/img/cr6.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>CatBloxGenesis</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>3</span>
+                    <img src="assets/img/cr5.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Pizza Game Chef</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>4</span>
+                    <img src="assets/img/cr5.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Pizza Game Chef</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item mb-0">
+                  <div class="creator_img">
+                    <span>5</span>
+                    <img src="assets/img/cr7.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Tsuki Genesis</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+          <div class="top_creator_item">
+            <div class="tor_creator_item_heading">
+              <h3>Top Sellers</h3>
+              <a href="creator_page.html" class="common_btn2">View More</a>
+            </div>
+            <div class="creator_item_list">
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>1</span>
+                    <img src="assets/img/cr8.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Tuski Genesis</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>2</span>
+                    <img src="assets/img/cr8.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Tuski Genesis</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>3</span>
+                    <img src="assets/img/cr9.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Rat Pack Mafia</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item">
+                  <div class="creator_img">
+                    <span>4</span>
+                    <img src="assets/img/cr10.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Meta Toy DragonZ</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+              <a href="authors_profile_1.html">
+                <div class="creator_single_item mb-0">
+                  <div class="creator_img">
+                    <span>5</span>
+                    <img src="assets/img/cr10.png" alt="">
+                    <img src="assets/img/cr_icon.png" class="creator_icon" alt="">
+                  </div>
+                  <div class="creator_meta">
+                    <p>Meta Toy DragonZ</p>
+                    <span>$2,932,469</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Top Creator end -->
+
+  <!-- lets join start -->
+  <section class="let_join common_bg1">
+    <div class="container">
+      <div class="let_join_background">
+        <div class="row g-0">
+          <div class="col-xl-6 col-lg-6 md-5  col-12">
+            <div class="let_join_left">
+              <h2>Let's Join our Collect
+                Community</h2>
+              <div class="let_join_button wallet_page">
+                <a class="let_join1 common_btn1" href="login.html">Join Now</a>
+                <a class="let_join2" href="collect_wallet.html">Connect Wallet</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 md-7  col-12  let_small">
+            <div class="let_join_right">
+              <img src="assets/img/lets.png" alt="image">
+              <img src="assets/img/let.png" class="vector_img" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- lets join end -->
+
+  <!-- how to create start -->
+  <section class="how_create common_bg1">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-xl-6 col-lg-6 col-12 ">
+          <div class="how_create_left">
+            <div class="how_create_video">
+              <img src="assets/img/howto.png" alt="">
+              <a class="venobox" data-autoplay="true" data-vbtype="video"
+                href="https://www.youtube.com/watch?v=KGqBfyQFG_g&t=73s"><i class="fas fa-play"></i></a>
+            </div>
+            <p>Efficiently administrate unique Continually orchestrate team driven total linkage before an expanded
+              array of customer
+              service.</p>
+            <a class="common_btn1" href="get_in_touch.html">Get a Quote</a>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-12 ">
+          <div class="how_create_right">
+            <h2>How to Create and
+              Sell Your NFTs</h2>
+            <div class="how_sell">
+              <div class="how_sell_item">
+                <div class="how_sell_img">
+                  <img src="assets/img/how1.png" alt="">
+                </div>
+                <div class="how_sell_content">
+                  <h5>Connect your Wallet</h5>
+                  <p>Monotonectally target superior e-markets rather than best-of-breed web-readiness.</p>
+                </div>
+              </div>
+              <div class="how_sell_item">
+                <div class="how_sell_img">
+                  <img src="assets/img/how1.png" alt="">
+                </div>
+                <div class="how_sell_content">
+                  <h5>Connect your Wallet</h5>
+                  <p>Monotonectally target superior e-markets rather than best-of-breed web-readiness.</p>
+                </div>
+              </div>
+              <div class="how_sell_item">
+                <div class="how_sell_img">
+                  <img src="assets/img/how1.png" alt="">
+                </div>
+                <div class="how_sell_content">
+                  <h5>Connect your Wallet</h5>
+                  <p>Monotonectally target superior e-markets rather than best-of-breed web-readiness.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- how to create end -->
+
+  <!-- download app start -->
+  <section class="download_partner common_bg1">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+          <div class="download_app">
+            <p>Download App</p>
+            <h3>Download the App
+              Today and Get Started!</h3>
+            <div class="download_button">
+              <a href=""><img src="assets/img/google_play.png" alt=""></a>
+              <a href=""><img src="assets/img/apple.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+          <div class="trusted_partner">
+            <p>Trusted Partner</p>
+            <h3>Awesome People we
+              Worked with</h3>
+            <div class="row partner">
+              <div class="col-3 text-center partner_border">
+                <img src="assets/img/binan.png" alt="">
+              </div>
+              <div class="col-3 text-center partner_border">
+                <img src="assets/img/binan.png" alt="">
+              </div>
+              <div class="col-3 text-center partner_border">
+                <img src="assets/img/binan.png" alt="">
+              </div>
+              <div class="col-3 text-center partner_border partner_border1">
+                <img src="assets/img/binan.png" alt="">
+              </div>
+              <div class="col-3 text-center partner_border_left ">
+                <img src="assets/img/binan.png" alt="">
+              </div>
+              <div class="col-3 text-center partner_border_left">
+                <img src="assets/img/binan.png" alt="">
+              </div>
+              <div class="col-3 text-center partner_border_left">
+                <img src="assets/img/binan.png" alt="">
+              </div>
+              <div class="col-3 text-center partner_border_left partner_border1">
+                <img src="assets/img/binan.png" alt="">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- download app end -->
+
+  <!-- latest news start -->
+  <section class="latest_news common_bg">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-xl-7 col-lg-7 col-md-8 col-12">
+          <div class="common_heading text-start">
+            <h2>Latest News & Tricks</h2>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-4 col-12 ">
+          <div class="latest_right text-end">
+            <a class="common_btn" href="blog_grid.html">More Post</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="blog_grid_item">
+            <div class="b_grid_img">
+              <div class="img_wrap">
+                <a href="blog_single.html"><img class="img" src="assets/img/b1.png" alt=""></a>
+              </div>
+              <span>Digital Art</span>
+            </div>
+            <div class="b_grid_meta">
+              <div class="b_grid_date">
+                <img src="assets/img/date.png" alt="">
+                <span>20th Feb, 2022</span>
+              </div>
+              <div class="b_grid_com">
+                <img src="assets/img/chat.png" alt="">
+                <span>25 Comments</span>
+              </div>
+            </div>
+            <a href="blog_single.html">
+              <h3>What is Cryptocurrency Trading
+                &amp; How Does it Work</h3>
+            </a>
+            <p>Interactively implement cooperative users without Phosfluorescently grow compelling.</p>
+            <a class="common_btn2" href="blog_single.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="blog_grid_item">
+            <div class="b_grid_img">
+              <div class="img_wrap">
+                <a href="blog_single.html"><img class="img" src="assets/img/b2.png" alt=""></a>
+              </div>
+              <span>Digital Art</span>
+            </div>
+            <div class="b_grid_meta">
+              <div class="b_grid_date">
+                <img src="assets/img/date.png" alt="">
+                <span>20th Feb, 2022</span>
+              </div>
+              <div class="b_grid_com">
+                <img src="assets/img/chat.png" alt="">
+                <span>25 Comments</span>
+              </div>
+            </div>
+            <a href="blog_single.html">
+              <h3>Why is the Big Cryptocurrency Crashing</h3>
+            </a>
+            <p>Interactively implement cooperative users without Phosfluorescently grow compelling.</p>
+            <a class="common_btn2" href="blog_single.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="blog_grid_item">
+            <div class="b_grid_img">
+              <div class="img_wrap">
+                <a href="blog_single.html"><img class="img" src="assets/img/b3.png" alt=""></a>
+              </div>
+              <span>Digital Art</span>
+            </div>
+            <div class="b_grid_meta">
+              <div class="b_grid_date">
+                <img src="assets/img/date.png" alt="">
+                <span>20th Feb, 2022</span>
+              </div>
+              <div class="b_grid_com">
+                <img src="assets/img/chat.png" alt="">
+                <span>25 Comments</span>
+              </div>
+            </div>
+            <a href="blog_single.html">
+              <h3>The top industries adapting to NFTs with case studies</h3>
+            </a>
+            <p>Interactively implement cooperative users without Phosfluorescently grow compelling.</p>
+            <a class="common_btn2" href="blog_single.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- latest news end -->
 
   <!-- footer start -->
   <footer>
@@ -215,8 +1811,7 @@
               scenarios with integrated human capital. backward
               compatible web services. </p>
             <form>
-              <input type="email" class="form-control email" placeholder="Enter Your Email" id="exampleInputEmail1"
-                aria-describedby="emailHelp">
+              <input type="email" class="form-control email" placeholder="Enter Your Email" id="exampleInputEmail1">
               <button type="submit" class="btn common_btn">Subscribe</button>
             </form>
           </div>
@@ -225,12 +1820,12 @@
           <div class="footer_widget2">
             <h5>Marketplace</h5>
             <ul class="footer_common">
-              <li><a href="#">All NFTs</a></li>
-              <li><a href="#">Popular Category</a></li>
-              <li><a href="#">Digital art</a></li>
-              <li><a href="#">Trending Collection</a></li>
-              <li><a href="#">Explore Details</a></li>
-              <li><a href="#">Top Author</a></li>
+              <li><a href="explore_marketplace.html">All NFTs</a></li>
+              <li><a href="explore_collectibles.html">Popular Category</a></li>
+              <li><a href="explore_collectibles.html">Digital art</a></li>
+              <li><a href="explore_marketplace.html">Trending Collection</a></li>
+              <li><a href="collection_single_page.html">Explore Details</a></li>
+              <li><a href="creator_page.html">Top Author</a></li>
             </ul>
           </div>
         </div>
@@ -238,11 +1833,11 @@
           <div class="footer_widget3">
             <h5>Account</h5>
             <ul class="footer_common">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">My Collection</a></li>
-              <li><a href="#">Create & Upload</a></li>
-              <li><a href="#">Accunt Setting</a></li>
-              <li><a href="#">Connect Wallet</a></li>
+              <li><a href="login.html">Profile</a></li>
+              <li><a href="explore_collectibles.html">My Collection</a></li>
+              <li><a href="create_new_item.html">Create & Upload</a></li>
+              <li><a href="login.html">Accunt Setting</a></li>
+              <li><a href="collect_wallet.html">Connect Wallet</a></li>
               <li><a href="#">Wishlist</a></li>
             </ul>
           </div>
@@ -261,11 +1856,11 @@
               </li>
               <li>
                 <span><img src="assets/img/email.png" alt=""></span>
-                <a href="tell:+2(305) 587-3407">support@code-xpeed.com</a>
+                <a href="tell:+2(305)587-3407">support@code-xpeed.com</a>
               </li>
               <li>
                 <span><img src="assets/img/clock.png" alt=""></span>
-                <a href="tell:+2(305) 587-3407">Office Hours - 8.00 AM-7.00 PM</a>
+                <a href="tell:+2(305)587-3407">Office Hours - 8.00 AM-7.00 PM</a>
               </li>
             </ul>
           </div>
@@ -274,7 +1869,7 @@
       <div class="row footer_bottom">
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-7 col-12 p-0">
           <div class="f_bottom_left">
-            <p> Copyright©2022. Created with love by <span> Gigachain</span></p>
+            <p> Copyright©2022. Created with love by <a href="index.html"><span>Gigachain</span></a></p>
           </div>
         </div>
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-5 col-12 p-0">
@@ -293,14 +1888,25 @@
   </footer>
   <!-- footer end -->
 
+  <!-- scroll to top button -->
+  <a href="javascript:" id="return-to-top"><i class="fa-regular fa-hand-pointer"></i></a>
+  <!-- scroll to top button -->
 
-  <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+  <!-- <script src="assets/js/jquery-3.6.1.min.js"></script> -->
+  <script src="assets/js/code.jquery.com_jquery-2.2.0.min.js"></script>
   <script src="assets/js/modernizr-3.11.2.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/venobox.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <!-- <script src="assets/js/isotop.min.js"></script> -->
+  <script src="assets/js/scroll.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
